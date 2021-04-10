@@ -1,28 +1,25 @@
 @charset "utf-8";
 
-/* 新着スタイル */
-ul#news{
+/* リンクスタイル */
+ul#links{
 	width:500px;
 }
-#news li{
+#links li{
 	border-bottom:1px solid #ccc;
 	list-style:none;
 }
-#news li a{
+#links li a{
 	text-decoration:none;
 	display: block;
 	padding: 10px 0;
 }
-#news li a:hover{
-	background-color:#ccc;
-}
-#news li a span{
-	color: #737373;
+#links li a span{
+	color: #131313;
 	vertical-align: middle;
 	display: inline-block;
 	margin-right: 10px;
 }
-#news li a p{
+#links li a p{
 	color: #131313;
 	display: inline-block;
 	margin: 0;

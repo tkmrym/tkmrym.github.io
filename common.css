@@ -16,8 +16,6 @@ div#pagebody{
 /*============================================
 メインメニュー
 ============================================*/
-
-
 #current a {
 	color:#fcd69e;
 }
@@ -65,6 +63,7 @@ header .headline{
 /*========================================
 ヘッダ画像
 ========================================*/
+/* TODO:アニメ中はbeforeが効かない */
 .header_img {/*親div*/
 	position: relative;/*相対配置*/
 }
@@ -82,7 +81,7 @@ header .headline{
 .header_img h2 {
 	position: absolute;/*絶対配置*/
 	color: white;
-	font-size: 30px;
+	font-size: 40px;
 	top: 50%;
 	left: 50%;
 	-ms-transform: translate(-50%,-50%);
@@ -95,6 +94,22 @@ header .headline{
 .header_img img {
 	width: 100%;
 	vertical-align:top;
+
+	/* じわっと画像が表示される */
+	animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+ 
+/* じわっと画像が表示される ---------　一度追加していたら不要*/
+@keyframes fadeIn { /*上のbody内で呼び出しているアニメーションと名前をそろえる*/
+    0% {opacity: 0} /* 始め */
+    100% {opacity: 1} /* 終わり */
+}
+ 
+/*古いブラウザ用　---------　一度追加していたら不要*/
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
 }
 
 main {
@@ -112,7 +127,7 @@ main {
 h3 {
 	/*背景色*/
 	/* background: #F7FAFD; */
-	border-bottom: solid 3px black;
+	border-bottom: solid 3px #fcd69e;
 	padding: 5px 10px;/*文字まわり（上下左右）の余白*/
 	margin: 10px 0 10px;
 }
@@ -136,6 +151,35 @@ body {
 div#pagebody {
 	flex: 1;
 }
+
+
+/*============================================
+定義リスト
+============================================*/
+dl#list {
+	width:50%;
+	margin:20px auto;
+	border-bottom:1px solid #999;
+	letter-spacing:-0.31em;
+	*letter-spacing:normal;
+	word-spacing:-0.43em;
+  } 
+
+#list dt,dd {
+  display:inline-block;
+  *display:inline;
+  zoom:1;
+  letter-spacing:normal;
+  word-spacing:normal;
+  vertical-align:top;
+  width:46%;
+  padding:3px 2% 4px;
+  margin:0;
+  border-top:1px solid #999;
+}
+#list dt {
+	margin-right:-1px;
+  }
 
 
 
