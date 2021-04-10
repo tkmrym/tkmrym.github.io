@@ -1,36 +1,28 @@
 @charset "utf-8";
 
+* {
+	margin:0; padding:0;
+}
+
 body{
 	background-color:#ffffff;		/*ページ全体の背景色*/
 	font-family:"メイリオ",'Meiryo',"Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3", sans-serif;
+}
+div#pagebody{
+	width:1400px;
+	margin:0 auto;	/*内容全体をセンタリング*/
 }
 
 /*============================================
 メインメニュー
 ============================================*/
-div#menu {
-	width:960px; height:50px; 	/*メインメニュー部分の幅と高さ*/
-}
-#menu li {
-	list-style-type:none;		/*リストマーカー無しにする*/
-	display:inline;			/*リスト項目をインライン表示にする*/
-	float:left;			/*リスト項目を横に並べる*/
-}
-#menu li a {
-	display:block;			/*リンク部分をブロック表示にする*/
-	width:240px; height:35px;	/*幅と高さ*/
-}
 
-h3 {
-	background: #c2edff;/*背景色*/
-	padding: 0.5em;/*文字まわり（上下左右）の余白*/
+
+#current a {
+	color:#fcd69e;
 }
 
 
-
-* {
-	margin:0; padding:0;
-}
 header {
 	height: 40px;
 	width: 100%;
@@ -38,11 +30,12 @@ header {
 	background-color:#333333;
 	color: white;
 }
+
 header .headline{
 	line-height: 40px;
 	float: left;
 	font-size: 25px;
-	margin-left: 30px;
+	margin-left: 90px;
 }
 .nav-list {
 	line-height: 40px;
@@ -66,24 +59,6 @@ header .headline{
 .nav-list-item a:hover {
 	color: #888;
 	transition: 0.2s;
-}
-
-footer{
-	width: 100%;
-	height: 40px;
-	background-color: #333333;
-	color: white;
-	text-align: center;
-	line-height: 40px;
-}
-
-body {
-	display: flex;
-	flex-flow: column;
-	min-height: 100vh;
-}
-main {
-	flex: 1;
 }
 
 
@@ -122,6 +97,46 @@ main {
 	vertical-align:top;
 }
 
-#current a {
-	color:#fcd69e;
+main {
+	margin: 10px 15px 20px; /*上 左右 下*/
 }
+
+/* main p {
+	margin-bottom: 20px;
+} */
+
+
+/*============================================
+見出し
+============================================*/
+h3 {
+	/*背景色*/
+	/* background: #F7FAFD; */
+	border-bottom: solid 3px black;
+	padding: 5px 10px;/*文字まわり（上下左右）の余白*/
+	margin: 10px 0 10px;
+}
+
+/*============================================
+footer
+============================================*/
+footer{
+	width: 100%;
+	height: 40px;
+	background-color: #333333;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+}
+body {
+	display: flex;
+	flex-flow: column;
+	min-height: 100vh;
+}
+div#pagebody {
+	flex: 1;
+}
+
+
+
+
