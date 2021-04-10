@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+body{
+	background-color:#ffffff;		/*ページ全体の背景色*/
+	font-family:"メイリオ",'Meiryo',"Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3", sans-serif;
+}
+
+/*============================================
+メインメニュー
+============================================*/
+div#menu {
+	width:960px; height:50px; 	/*メインメニュー部分の幅と高さ*/
+}
+#menu li {
+	list-style-type:none;		/*リストマーカー無しにする*/
+	display:inline;			/*リスト項目をインライン表示にする*/
+	float:left;			/*リスト項目を横に並べる*/
+}
+#menu li a {
+	display:block;			/*リンク部分をブロック表示にする*/
+	width:240px; height:35px;	/*幅と高さ*/
+}
+
+h3 {
+	background: #c2edff;/*背景色*/
+	padding: 0.5em;/*文字まわり（上下左右）の余白*/
+}
+
+
+
+* {
+	margin:0; padding:0;
+}
+header {
+	height: 40px;
+	width: 100%;
+	padding: 15px 0;
+	background-color:#333333;
+	color: white;
+}
+header .headline{
+	line-height: 40px;
+	float: left;
+	font-size: 25px;
+	margin-left: 30px;
+}
+.nav-list {
+	line-height: 40px;
+	float: left;
+	margin-left: 30px;
+	list-style: none;
+}
+.nav-list-item {
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.nav-list-item a {
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+.nav-list-item a:hover {
+	color: #888;
+	transition: 0.2s;
+}
+
+footer{
+	width: 100%;
+	height: 40px;
+	background-color: #333333;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+}
+
+body {
+	display: flex;
+	flex-flow: column;
+	min-height: 100vh;
+}
+main {
+	flex: 1;
+}
+
+
+/*========================================
+ヘッダ画像
+========================================*/
+.header_img {/*親div*/
+	position: relative;/*相対配置*/
+}
+
+.header_img::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header_img h2 {
+	position: absolute;/*絶対配置*/
+	color: white;
+	font-size: 30px;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	margin:0;
+	padding:0;
+}
+
+.header_img img {
+	width: 100%;
+	vertical-align:top;
+}
+
+#current a {
+	color:#fcd69e;
+}
