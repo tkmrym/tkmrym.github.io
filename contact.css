@@ -1,2 +1,5 @@
 @charset "utf-8";
 
+iframe#map {
+	margin-top: 10px;
+}

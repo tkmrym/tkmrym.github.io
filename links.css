@@ -1,28 +1,21 @@
 @charset "utf-8";
 
 /* リンクスタイル */
-ul#links{
-	width:500px;
+dl#link-list {
+	overflow: hidden;
+	zoom: 1;
 }
-#links li{
-	border-bottom:1px solid #ccc;
-	list-style:none;
+dl#link-list dt {
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	width: 500px;
+	float: left;
+	clear: both;
+	font-weight: bold;
 }
-#links li a{
-	text-decoration:none;
-	display: block;
-	padding: 10px 0;
+dl#link-list dd {
+	margin-bottom: 5px;
+	padding: 0 0 5px 500px;
+	border-bottom: 1px dotted #999;
 }
-#links li a span{
-	color: #131313;
-	vertical-align: middle;
-	display: inline-block;
-	margin-right: 10px;
-}
-#links li a p{
-	color: #131313;
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-	vertical-align: middle;
-}
+	
