@@ -1,1 +1,31 @@
 @charset "utf-8";
+
+/*============================================
+プロフィールの設定
+============================================*/
+dl#profilelist{
+	width:90%;
+	padding:3%;
+	box-sizing: border-box;
+}
+
+dl#profilelist dt{
+	border-top:1px dashed #666666;
+	float: left;
+	width:25%; /* dl#profilelist dd margin-left と連動 */
+	padding: 10px 0;
+}
+
+dl#profilelist dd{
+	border-top:1px dashed #666666;
+	padding: 10px 0;
+	margin-left: 25%;
+}
+
+dl#profilelist dt:first-child{
+	border-top:none;
+}
+
+dl#profilelist dt:first-child + dd{
+	border-top:none;
+}

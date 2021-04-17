@@ -5,7 +5,7 @@ ul#news{
 	width:500px;
 }
 #news li{
-	border-bottom:1px solid #ccc;
+	border-bottom:1px dashed #666666;
 	list-style:none;
 }
 #news li a{

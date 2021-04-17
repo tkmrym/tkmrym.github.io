@@ -1,5 +1,10 @@
 @charset "utf-8";
 
-iframe#map {
-	margin-top: 10px;
+div#ggmap {
+	max-width: 600px;
+	height: 400px;
+}
+
+img#e-m {
+	width: 320px;
 }

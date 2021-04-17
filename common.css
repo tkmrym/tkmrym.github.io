@@ -9,7 +9,9 @@ body{
 	font-family:"メイリオ",'Meiryo',"Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3", sans-serif;
 }
 div#pagebody{
-	width:1400px;
+	max-width:1400px;
+	width: 100vw;
+	min-width: 850px;
 	margin:0 auto;	/*内容全体をセンタリング*/
 }
 
@@ -20,10 +22,10 @@ div#pagebody{
 	color:#fcd69e;
 }
 
-
 header {
 	height: 40px;
 	width: 100%;
+	min-width: 850px;
 	padding: 15px 0;
 	background-color:#333333;
 	color: white;
@@ -33,7 +35,8 @@ header .headline{
 	line-height: 40px;
 	float: left;
 	font-size: 25px;
-	margin-left: 90px;
+	/* margin-left: 90px; */
+	margin-left: 5vw;
 }
 .nav-list {
 	line-height: 40px;
@@ -93,6 +96,7 @@ header .headline{
 
 .header_img img {
 	width: 100%;
+	min-width: 850px;
 	vertical-align:top;
 	filter: brightness(50%);
 
@@ -138,6 +142,7 @@ footer
 ============================================*/
 footer{
 	width: 100%;
+	min-width: 850px;
 	height: 40px;
 	background-color: #333333;
 	color: white;
@@ -154,33 +159,8 @@ div#pagebody {
 }
 
 
-/*============================================
-定義リスト
-============================================*/
-dl#list {
-	width:50%;
-	margin:20px auto;
-	border-bottom:1px solid #999;
-	letter-spacing:-0.31em;
-	*letter-spacing:normal;
-	word-spacing:-0.43em;
-  } 
 
-#list dt,dd {
-  display:inline-block;
-  *display:inline;
-  zoom:1;
-  letter-spacing:normal;
-  word-spacing:normal;
-  vertical-align:top;
-  width:46%;
-  padding:3px 2% 4px;
-  margin:0;
-  border-top:1px solid #999;
-}
-#list dt {
-	margin-right:-1px;
-  }
+	
 
 
 

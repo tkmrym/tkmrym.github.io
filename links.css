@@ -1,21 +1,31 @@
 @charset "utf-8";
 
-/* リンクスタイル */
-dl#link-list {
-	overflow: hidden;
-	zoom: 1;
+/*============================================
+リンクの設定
+============================================*/
+dl#linktable{
+	width: 90%;
+	padding: 3%;
+	box-sizing: border-box;
 }
-dl#link-list dt {
-	margin-bottom: 5px;
-	padding-bottom: 5px;
-	width: 500px;
+
+dl#linktable dt{
+	border-top: 1px dashed #666666;
 	float: left;
-	clear: both;
-	font-weight: bold;
+	width: 25%; /* dl#linktable dd margin-left と連動 */
+	padding: 10px 0;
 }
-dl#link-list dd {
-	margin-bottom: 5px;
-	padding: 0 0 5px 500px;
-	border-bottom: 1px dotted #999;
+
+dl#linktable dd{
+	border-top: 1px dashed #666666;
+	padding: 10px 0;
+	margin-left: 25%;
 }
-	
+
+dl#linktable dt:first-child{
+	border-top: none;
+}
+
+dl#linktable dt:first-child + dd{
+	border-top: none;
+}
