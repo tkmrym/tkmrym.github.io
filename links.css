@@ -5,7 +5,7 @@
 ============================================*/
 div#link-list{
 	width: 100%;
-	overflow: scroll;
+	overflow: auto;
 }
 
 div#link-list dl{

@@ -6,7 +6,7 @@ div#ggmap {
 }
 div#e-m {
 	width:100%;
-	overflow: scroll;
+	overflow: auto;
 }
 
 div#e-m img {
