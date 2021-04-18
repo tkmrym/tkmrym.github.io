@@ -11,7 +11,7 @@ div#link-list{
 div#link-list dl{
 	width: 90%;
 	min-width: 1000px;
-	padding: 3%;
+	/* padding: 3%; */
 	box-sizing: border-box;
 }
 
