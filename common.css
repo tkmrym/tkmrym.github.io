@@ -7,6 +7,7 @@
 body{
 	background-color:#ffffff;		/*ページ全体の背景色*/
 	font-family:"メイリオ",'Meiryo',"Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3", sans-serif;
+	font-size: 16px;
 }
 div#pagebody{
 	max-width:1400px;
@@ -238,29 +239,6 @@ div#pagebody {
 		background-color: #fff;
 	}
 
-	/*******************************/
-	.nav-list-item {
-		list-style: none;
-		display: inline-block;
-		margin: 0 20px;
-	}
-	
-	.nav-list-item a {
-		font-weight: bold;
-		text-decoration: none;
-		font-size: 18px;
-		color: #ffffff;
-	}
-	
-	.nav-list-item a:hover {
-		color: #888;
-		transition: 0.2s;
-	}
-	/*******************************/
-
-
-
-
 	.sp-nav {
 		z-index: 1;
 		position: fixed;
@@ -341,15 +319,6 @@ div#pagebody {
 		transform: translateY( 0 );
 		opacity: 1;
 	}
-
-	/* .main-visual {
-		padding: 0 4%;
-	} */
-
-	/* h2 {
-		line-height: 1.6;
-		text-align: center;
-	} */
 
 }
 
