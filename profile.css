@@ -3,29 +3,34 @@
 /*============================================
 プロフィールの設定
 ============================================*/
-dl#profilelist{
+div#profile-list {
+	width: 100%;
+	overflow: scroll;
+}
+div#profile-list dl{
+	min-width: 500px;
 	width:90%;
 	padding:3%;
 	box-sizing: border-box;
 }
 
-dl#profilelist dt{
+div#profile-list dl dt{
 	border-top:1px dashed #666666;
 	float: left;
-	width:25%; /* dl#profilelist dd margin-left と連動 */
+	width:25%; /* div#profile-list dl dd margin-left と連動 */
 	padding: 10px 0;
 }
 
-dl#profilelist dd{
+div#profile-list dl dd{
 	border-top:1px dashed #666666;
 	padding: 10px 0;
 	margin-left: 25%;
 }
 
-dl#profilelist dt:first-child{
+div#profile-list dl dt:first-child{
 	border-top:none;
 }
 
-dl#profilelist dt:first-child + dd{
+div#profile-list dl dt:first-child + dd{
 	border-top:none;
 }
