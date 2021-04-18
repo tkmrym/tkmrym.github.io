@@ -1,44 +1,13 @@
 @charset "utf-8";
 
 /* 新着スタイル */
-/* ul#news{
-	max-width:500px;
-	width: 100%;
-}
-#news li{
-	border-bottom:1px dashed #666666;
-	list-style:none;
-}
-#news li a{
-	text-decoration:none;
-	display: block;
-	padding: 10px 0;
-}
-#news li a:hover{
-	background-color:#ccc;
-}
-#news li a span{
-	color: #737373;
-	vertical-align: middle;
-	display: inline-block;
-	margin-right: 10px;
-}
-#news li a p{
-	color: #131313;
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-	vertical-align: middle;
-} */
-
 div#news {
 	width: 100%;
 	overflow: auto;
 }
 div#news dl{
-	min-width: 500px;
-	width:700px;
-	padding:3%;
+	min-width: 300px;
+	width:500px;
 	box-sizing: border-box;
 }
 
