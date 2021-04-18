@@ -10,7 +10,7 @@ body{
 }
 div#pagebody{
 	max-width:1400px;
-	width: 100vw;
+	width: 100%;
 	min-width: 850px;
 	margin:0 auto;	/*内容全体をセンタリング*/
 }
@@ -36,7 +36,7 @@ header .headline{
 	float: left;
 	font-size: 25px;
 	/* margin-left: 90px; */
-	margin-left: 5vw;
+	margin-left: 5%;
 }
 .nav-list {
 	line-height: 40px;
