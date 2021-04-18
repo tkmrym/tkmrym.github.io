@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* 新着スタイル */
-ul#news{
+/* ul#news{
 	max-width:500px;
 	width: 100%;
 }
@@ -29,4 +29,36 @@ ul#news{
 	margin: 0;
 	padding: 0;
 	vertical-align: middle;
+} */
+
+div#news {
+	width: 100%;
+	overflow: auto;
+}
+div#news dl{
+	min-width: 500px;
+	width:700px;
+	padding:3%;
+	box-sizing: border-box;
+}
+
+div#news dl dt{
+	border-top:1px dashed #666666;
+	float: left;
+	width:120px; /* div#news dl dd margin-left と連動 */
+	padding: 10px 0;
+}
+
+div#news dl dd{
+	border-top:1px dashed #666666;
+	padding: 10px 0;
+	margin-left: 120px;
+}
+
+div#news dl dt:first-child{
+	border-top:none;
+}
+
+div#news dl dt:first-child + dd{
+	border-top:none;
 }
