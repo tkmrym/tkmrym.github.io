@@ -9,7 +9,7 @@ div#profile-list {
 }
 div#profile-list dl{
 	min-width: 500px;
-	width:90%;
+	width:70%;
 	/* padding:3%; */
 	box-sizing: border-box;
 }
@@ -24,7 +24,7 @@ div#profile-list dl dt{
 div#profile-list dl dd{
 	border-top:1px dashed #666666;
 	padding: 10px 0;
-	margin-left: 25%;
+	margin-left: 25%;/* dtのwidthと連携 */
 }
 
 div#profile-list dl dt:first-child{
