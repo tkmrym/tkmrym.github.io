@@ -320,6 +320,19 @@ div#pagebody {
 		opacity: 1;
 	}
 
+	.header_img h2 {
+		position: absolute;/*絶対配置*/
+		color: white;
+		font-size: 25px;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%,-50%);
+		-webkit-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+		margin:0;
+		padding:0;
+	}
+
 }
 
 	
