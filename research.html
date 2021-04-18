@@ -2,9 +2,23 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="common.css">
 	<link rel="stylesheet" href="research.css">
+	<!-- jQueryの読み込み -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 	<title>Research｜Taiki Moriyama</title>
+
+	<!-- スマホナビの表示・非表示 -->
+	<script>
+		$(function() {
+		const hum = $('#hamburger, .close')
+		const nav = $('.sp-nav')
+		hum.on('click', function(){
+			nav.toggleClass('toggle');
+		});
+		});
+	</script>
 </head>
 <body>
 	<!-- header -->
@@ -17,6 +31,19 @@
 			<li class="nav-list-item"><a href="./links.html">Links</a></li>
 			<li class="nav-list-item"><a href="./contact.html">Contact</a></li>
 		</ul>
+		<nav class="sp-nav">
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./profile.html">Profile</a></li>
+				<li id="current"><a href="./research.html">Research</a></li>
+				<li><a href="./links.html">Links</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+			   	<li class="close"><span>閉じる</span></li>
+			</ul>
+		</nav>
+		<div id="hamburger">
+			<span></span>
+		</div>
 	</header>
 
 
