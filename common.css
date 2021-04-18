@@ -238,6 +238,29 @@ div#pagebody {
 		background-color: #fff;
 	}
 
+	/*******************************/
+	.nav-list-item {
+		list-style: none;
+		display: inline-block;
+		margin: 0 20px;
+	}
+	
+	.nav-list-item a {
+		font-weight: bold;
+		text-decoration: none;
+		font-size: 18px;
+		color: #ffffff;
+	}
+	
+	.nav-list-item a:hover {
+		color: #888;
+		transition: 0.2s;
+	}
+	/*******************************/
+
+
+
+
 	.sp-nav {
 		z-index: 1;
 		position: fixed;
@@ -262,6 +285,8 @@ div#pagebody {
 		height: 100%;
 	}
 	.sp-nav li {
+		list-style: none;
+		display: inline-block;
 		margin: 0;
 		padding: 0;
 	}
@@ -269,7 +294,14 @@ div#pagebody {
 		font-size: 15px;
 		color: #fff;
 	}
+
+	.sp-nav li a {
+		font-size: 18px;
+	}
 	.sp-nav li a, .sp-nav li span {
+		font-weight: bold;
+		text-decoration: none;
+		color: #ffffff;
 		display: block;
 		padding: 20px 0;
 	}
