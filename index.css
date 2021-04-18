@@ -2,7 +2,8 @@
 
 /* 新着スタイル */
 ul#news{
-	width:500px;
+	max-width:500px;
+	width: 100%;
 }
 #news li{
 	border-bottom:1px dashed #666666;
