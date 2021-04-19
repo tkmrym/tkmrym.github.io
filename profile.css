@@ -1,8 +1,5 @@
 @charset "utf-8";
 
-/*============================================
-プロフィールの設定
-============================================*/
 div#profile-list {
 	width: 100%;
 	overflow: auto;
@@ -10,21 +7,20 @@ div#profile-list {
 div#profile-list dl{
 	min-width: 500px;
 	width:70%;
-	/* padding:3%; */
 	box-sizing: border-box;
 }
 
 div#profile-list dl dt{
 	border-top:1px dashed #666666;
 	float: left;
-	width:25%; /* div#profile-list dl dd margin-left と連動 */
+	width:25%; /* dd の margin-left と連携 */
 	padding: 10px 0;
 }
 
 div#profile-list dl dd{
 	border-top:1px dashed #666666;
 	padding: 10px 0;
-	margin-left: 25%;/* dtのwidthと連携 */
+	margin-left: 25%; /* dtのwidthと連携 */
 }
 
 div#profile-list dl dt:first-child{

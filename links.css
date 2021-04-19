@@ -1,37 +1,28 @@
 @charset "utf-8";
 
-/*============================================
-リンクの設定
-============================================*/
 div#link-list{
 	width: 100%;
 	overflow: auto;
 }
-
 div#link-list dl{
 	width: 90%;
 	min-width: 1000px;
-	/* padding: 3%; */
 	box-sizing: border-box;
 }
-
 div#link-list dl dt{
 	border-top: 1px dashed #666666;
 	float: left;
-	width: 30%; /* div#link-list dl dd の margin-left と連動 */
+	width: 30%; /* dd の margin-left と連携 */
 	padding: 10px 0;
 }
-
 div#link-list dl dd{
 	border-top: 1px dashed #666666;
 	padding: 10px 0;
-	margin-left: 30%;
+	margin-left: 30%; /* dt の width と連携 */
 }
-
 div#link-list dl dt:first-child{
 	border-top: none;
 }
-
 div#link-list dl dt:first-child + dd{
 	border-top: none;
 }

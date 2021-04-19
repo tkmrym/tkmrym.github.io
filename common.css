@@ -3,9 +3,8 @@
 * {
 	margin:0; padding:0;
 }
-
 body{
-	background-color:#ffffff;		/*ページ全体の背景色*/
+	background-color:#ffffff;
 	font-family:"メイリオ",'Meiryo',"Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3", sans-serif;
 	font-size: 16px;
 }
@@ -13,19 +12,13 @@ div#pagebody{
 	max-width:1400px;
 	width: 100%;
 	min-width: 850px;
-	margin:0 auto;	/*内容全体をセンタリング*/
+	margin:0 auto;	/* center contents */
 }
 
-/*============================================
-メインメニュー
-============================================*/
-
-
-
+/* nav */
 #current a {
 	color:#fcd69e;
 }
-
 header {
 	height: 40px;
 	width: 100%;
@@ -34,12 +27,10 @@ header {
 	background-color:#333333;
 	color: white;
 }
-
 header .headline{
 	line-height: 40px;
 	float: left;
 	font-size: 25px;
-	/* margin-left: 90px; */
 	margin-left: 5%;
 }
 .pc-nav ul {
@@ -53,35 +44,26 @@ header .headline{
 	display: inline-block;
 	margin: 0 20px;
 }
-
 .nav-list-item a {
 	font-weight: bold;
 	text-decoration: none;
 	font-size: 18px;
 	color: #ffffff;
 }
-
 .nav-list-item a:hover {
 	color: #888;
 	transition: 0.2s;
 }
-
 .sp-nav {
 	display: none;
 }
 
-
-
-
-/*========================================
-ヘッダ画像
-========================================*/
-.header_img {/*親div*/
-	position: relative;/*相対配置*/
+/* heading picture */
+.header_img {
+	position: relative;
 }
-
 .header_img h2 {
-	position: absolute;/*絶対配置*/
+	position: absolute;
 	color: white;
 	font-size: 40px;
 	top: 50%;
@@ -92,53 +74,33 @@ header .headline{
 	margin:0;
 	padding:0;
 }
-
 .header_img img {
 	width: 100%;
 	min-width: 850px;
 	vertical-align:top;
 	filter: brightness(50%);
-
-	/* じわっと画像が表示される */
 	animation: fadeIn 2s ease 0s 1 normal;
     -webkit-animation: fadeIn 2s ease 0s 1 normal;
+} 
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
 }
- 
-/* じわっと画像が表示される ---------　一度追加していたら不要*/
-@keyframes fadeIn { /*上のbody内で呼び出しているアニメーションと名前をそろえる*/
-    0% {opacity: 0} /* 始め */
-    100% {opacity: 1} /* 終わり */
-}
- 
-/*古いブラウザ用　---------　一度追加していたら不要*/
 @-webkit-keyframes fadeIn {
     0% {opacity: 0}
     100% {opacity: 1}
 }
 
 main {
-	margin: 10px 15px 20px; /*上 左右 下*/
+	margin: 10px 15px 20px;
 }
 
-/* main p {
-	margin-bottom: 20px;
-} */
-
-
-/*============================================
-見出し
-============================================*/
 h3 {
-	/*背景色*/
-	/* background: #F7FAFD; */
 	border-bottom: solid 3px #fcd69e;
-	padding: 5px 10px;/*文字まわり（上下左右）の余白*/
+	padding: 5px 10px;
 	margin: 10px 0 10px;
 }
 
-/*============================================
-footer
-============================================*/
 footer{
 	width: 100%;
 	min-width: 850px;
@@ -182,8 +144,6 @@ div#pagebody {
 		min-width: 0px;
 		vertical-align:top;
 		filter: brightness(50%);
-	
-		/* じわっと画像が表示される */
 		animation: fadeIn 2s ease 0s 1 normal;
 		-webkit-animation: fadeIn 2s ease 0s 1 normal;
 	}
@@ -289,7 +249,7 @@ div#pagebody {
 		padding-left: 20px;
 	}
 
-	/*バツ印線1*/
+	/* close icon */
 	.sp-nav .close::before {
 		content: '';
 		position: absolute;
@@ -301,8 +261,6 @@ div#pagebody {
 		background: #fff;
 		transform: rotate( 45deg );
 	}
-
-	/*バツ印線2*/
 	.sp-nav .close::after {
 		content: '';
 		position: absolute;
@@ -321,7 +279,7 @@ div#pagebody {
 	}
 
 	.header_img h2 {
-		position: absolute;/*絶対配置*/
+		position: absolute;
 		color: white;
 		font-size: 25px;
 		top: 50%;

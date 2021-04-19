@@ -4,11 +4,11 @@ div#ggmap {
 	max-width: 600px;
 	height: 400px;
 }
+
 div#e-m {
 	width:100%;
 	overflow: auto;
 }
-
 div#e-m img {
 	width: 320px;
 	margin-left: 5px;
