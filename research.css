@@ -1,12 +1,11 @@
 @charset "utf-8";
 
-main p{
-	float: left;
-	width: 70%;
+.article {
+	margin-bottom: 10px;
 }
 
-main img{
+.article img{
 	width: 20%;
 	float: left;
-	margin:0 5%;
+	margin:0 10px;
 }
