@@ -18,6 +18,15 @@
 			nav.toggleClass('toggle');
 		});
 		});
+
+		$(function() {
+		$('.header-img-slide img:nth-child(n+2)').hide();
+			setInterval(function() {
+				$(".header-img-slide img:first-child").fadeOut(2000);
+				$(".header-img-slide img:nth-child(2)").fadeIn(2000);
+				$(".header-img-slide img:first-child").appendTo(".header-img-slide");
+			}, 4000);
+		});
 	</script>
 </head>
 <body>
@@ -52,7 +61,15 @@
 	<div id=pagebody>
 		<!-- heading picture -->
 		<div class="header_img">
-			<img src="./img/header.png">
+			<!-- <img src="./img/header.png"> -->
+			<div class="header-img-slide">
+				<img src="./img/header1.png">
+				<img class="abs" src="./img/header2.png">
+				<img class="abs" src="./img/header3.png">
+				<img class="abs" src="./img/header4.png">
+				<img class="abs" src="./img/header5.png">
+				<img class="abs" src="./img/header6.png">
+			</div>
 			<h2>Home</h2>
 		</div>
 

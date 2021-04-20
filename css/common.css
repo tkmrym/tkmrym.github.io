@@ -62,6 +62,7 @@ header .headline{
 /* heading picture */
 .header_img {
 	position: relative;
+	height: auto;
 }
 .header_img h2 {
 	position: absolute;
@@ -75,22 +76,38 @@ header .headline{
 	margin:0;
 	padding:0;
 }
-.header_img img {
+/* .header_img img {
 	width: 100%;
 	min-width: 850px;
 	vertical-align:top;
 	filter: brightness(50%);
 	animation: fadeIn 2s ease 0s 1 normal;
     -webkit-animation: fadeIn 2s ease 0s 1 normal;
-} 
-@keyframes fadeIn {
+}  */
+/* @keyframes fadeIn {
     0% {opacity: 0}
     100% {opacity: 1}
 }
 @-webkit-keyframes fadeIn {
     0% {opacity: 0}
     100% {opacity: 1}
+} */
+/********************************/
+
+.header-img-slide {
+    width: 100%;
+	min-width: 850px;
+	/* vertical-align:top; */
+    position: relative;
 }
+
+.header-img-slide img {
+    width:100%;
+	filter: brightness(50%);
+    position: absolute;
+}
+
+/********************************/
 
 main {
 	margin: 10px 15px 20px;
