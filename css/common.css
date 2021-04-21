@@ -82,7 +82,7 @@ header .headline{
 	min-width: 850px;
     position: relative;
 }
-/* measures against zero height of div.header-img-slide because of absolute position of img */
+/* measures against zero height of ".header-img-slide" because of position property of ".header-img-slide img" */
 .header-img-slide::after{
 	content: "";
 	display: block;
