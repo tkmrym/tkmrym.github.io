@@ -3,22 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<title>Profile｜Taiki Moriyama</title>
+
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/profile.css">
 	<!-- load jQuery -->
 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-	<title>Profile｜Taiki Moriyama</title>
-
-	<!-- show or hide sp-nav -->
-	<script>
-		$(function() {
-		const hum = $('#hamburger, .close')
-		const nav = $('.sp-nav')
-		hum.on('click', function(){
-			nav.toggleClass('toggle');
-		});
-		});
-	</script>
+	<script src="js/common.js"></script>
 </head>
 <body>
 	<!-- header -->
@@ -52,7 +44,14 @@
 	<div id=pagebody>
 		<!-- heading picture -->
 		<div class="header_img">
-			<img src="./img/header.png">
+			<div class="header-img-slide">
+				<img src="./img/header1.png">
+				<img src="./img/header2.png">
+				<img src="./img/header3.png">
+				<img src="./img/header4.png">
+				<img src="./img/header5.png">
+				<img src="./img/header6.png">
+			</div>
 			<h2>Profile</h2>
 		</div>
 
