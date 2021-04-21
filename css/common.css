@@ -82,7 +82,7 @@ header .headline{
 	min-width: 850px;
     position: relative;
 }
-/* measures against zero height of ".header-img-slide" because of position property of ".header-img-slide img" */
+/* header-img の高さ設定 */
 .header-img-slide::after{
 	content: "";
 	display: block;
