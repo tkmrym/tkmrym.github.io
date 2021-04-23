@@ -119,6 +119,20 @@ body {
 	flex-flow: column;
 	min-height: 100vh;
 }
+
+.main-fadein{
+	opacity : 0;
+	visibility: hidden;
+	transition: 2s;
+	transform: translateY(10px);
+}
+/*アニメーション要素までスクロールした時のスタイル*/
+.main-fadein-active{
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
 div#pagebody {
 	flex: 1;
 }
