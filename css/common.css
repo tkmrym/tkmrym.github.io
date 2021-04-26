@@ -123,10 +123,9 @@ body {
 .main-fadein{
 	opacity : 0;
 	visibility: hidden;
-	transition: 2s;
-	transform: translateY(30px);
+	transition: 1s;
+	transform: translateY(5px);
 }
-/*アニメーション要素までスクロールした時のスタイル*/
 .main-fadein-active{
 	opacity: 1;
 	visibility: visible;
