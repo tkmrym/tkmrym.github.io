@@ -13,14 +13,14 @@ div#profile-list dl{
 div#profile-list dl dt{
 	border-top:1px dashed #666666;
 	float: left;
-	width:25%; /* dd の margin-left と連携 */
+	width:30%; /* dd の margin-left と連携 */
 	padding: 10px 0;
 }
 
 div#profile-list dl dd{
 	border-top:1px dashed #666666;
 	padding: 10px 0;
-	margin-left: 25%; /* dtのwidthと連携 */
+	margin-left: 30%; /* dtのwidthと連携 */
 }
 
 div#profile-list dl dt:first-child{
