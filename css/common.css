@@ -120,18 +120,6 @@ body {
 	min-height: 100vh;
 }
 
-.main-fadein{
-	opacity : 0;
-	visibility: hidden;
-	transition: 1s;
-	transform: translateY(5px);
-}
-.main-fadein-active{
-	opacity: 1;
-	visibility: visible;
-	transform: translateY(0);
-}
-
 div#pagebody {
 	flex: 1;
 }
